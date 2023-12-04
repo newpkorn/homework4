@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Roboto&family=Roboto+Condensed:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    max-width: 1024px;
+    margin: auto;
+    font-family: "Heebo", sans-serif;
+}
+
+.container {
+    background-color: #FFFFFF;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar > i {
+    display: none;
+}
+
+.profile {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8% 0;
+}
+
+.personal-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    gap: 20px;
+}
+
+.info p {
+    color: #21243D;
+}
+
+.info a {
+    background-color: #FF6464;
+    border-radius: 5px;
+    color: white;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    box-shadow: -7px 8px 3px 6px rgba(237,247,250,0.78);
+    -webkit-box-shadow: -7px 8px 3px 6px rgba(237,247,250,0.78);
+    -moz-box-shadow: -7px 8px 3px 6px rgba(237,247,250,0.78);
+    position: relative;;
+    width: 200px;
+    height: 200px;
+}
+
+.profile-img img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.post-container {
+    background-color: #EDF7FA;
+}
+
+.recent-posts {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.subject-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.subject-bar p {
+    color: 21243D;
+    font-size: 1.2em;
+}
+
+.subject-bar a {
+    color: #00A8CC;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.posts-content-container {
+    background-color: #EDF7FA;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.date-of-posts {
+    display: flex;
+    justify-content: start;
+}
+
+.posts {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.posts > * {
+    padding: 10px 0;
+}
+
+.date-of-posts p {
+    padding-right: 20px;
+    color: #21243D;
+
+}
+
+.posts-content a {
+    color: #21243D;
+}
+
+.featured-works {
+
+    color: #21243D;
+    width: 80%;
+    margin: auto;
+}
+
+.featured-works-box {
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.featured-works div > p {
+    font-size: 1.3em;
+    padding: 20px;
+}
+
+.featured-works-img {
+    background: url('https://picsum.photos/246/180/?random') no-repeat;
+    border-radius: 10px;
+    width: 246px;
+    height: 180px;
+}
+
+.featured-works-details{
+    width: 70%;
+}
+
+.featured-works-details * {
+    padding-bottom: 20px;
+}
+
+.featured-works-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.featured-works-year {
+    background-color: #142850;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    width: 60px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.featured-works-tool {
+    color: #8695A4;
+    display: inline-block;
+    padding-left: 1.9em;
+}
+
+.featured-works-content {
+    color: #21243D;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 10h;
+}
+
+.contact-channel {
+    font-size: 2.5em;
+    display: inline-flex;
+    padding-top: 50px;
+    gap: 40px;
+}
+
+.contact-channel a {
+    color: #000000;
+}
+
+footer p {
+    padding: 20px 0 50px 0;
+}
+
+@media(max-width: 512px) {
+    .navbar a {
+        display: none;
+    }
+
+    .navbar i {
+       display: flex;
+       font-size: 2em;
+    }
+
+    .personal-container {
+        flex-direction: column-reverse;
+        width: auto;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .info {
+        text-align: center;
+        height: auto;
+    }
+
+    .info a {
+        width: auto;
+    }
+
+    .subject-bar {
+        justify-content: center;
+    }
+
+    .subject-bar a {
+        display: none;
+    }
+
+    .posts-content-container {
+        flex-direction: column;
+    }
+
+    .featured-works {
+        text-align: center;
+    }
+
+    .featured-works-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+}
