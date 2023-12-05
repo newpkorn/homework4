@@ -33,6 +33,10 @@ body {
     font-weight: bold;
 }
 
+.navbar a:hover {
+    color: #FF6464;
+}
+
 .navbar > i {
     display: none;
 }
@@ -239,6 +243,7 @@ footer p {
     .navbar i {
        display: flex;
        font-size: 2em;
+       padding: 5px 0;
     }
 
     .personal-container {
