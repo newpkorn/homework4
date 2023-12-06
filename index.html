@@ -10,11 +10,22 @@
 <body>
     <div class="container">
         <head>
-            <nav class="navbar">
-                <a href="#">Home</a>
-                <a href="./blog.html">Blog</a>
-                <a href="./works.html">Works</a>
-                <i class="fa-solid fa-bars"></i>
+            <nav>
+                <div class="nav-container">
+                    <div class="nav-wrapper">
+                        <div class="logo"><h1>Menu</h1></div>
+                        <ul class="menu" id="top-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./works.html">Works</a></li>
+                        </ul>
+                        <div class="ham-menu" onclick="toggleHam(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </head>
         <main>
@@ -153,5 +164,6 @@
             <p>Copyright &#169 2020 All rights reserved</p>
         </footer>
     </div>  <!-- end of container -->
+    <script src="./script.js"></script>
 </body>
 </html>
